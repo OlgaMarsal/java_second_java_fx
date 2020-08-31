@@ -1,15 +1,25 @@
 package hw_lesson_four;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
+
 
 public class Controller {
+    @FXML
+    TextArea textArea;
 
+    @FXML
+    TextField textField;
+
+    public void sendMassage() {
+        textArea.appendText(textField.getText()+"\n");
+        textField.clear();
+        textField.requestFocus();
+    }
+
+    public void onClickBtnSend(ActionEvent actionEvent) {
+        textArea.appendText(textField.getText() + "\n");
+    }
 }

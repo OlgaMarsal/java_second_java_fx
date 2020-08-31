@@ -1,0 +1,33 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <Button text="1" onAction="#onClickBtn1" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="2" onAction="#onClickBtn2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Button text="3" onAction="#onClickBtn3" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="4" onAction="#onClickBtn4" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Button text="5" onAction="#onClickBtn5" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Button text="6" onAction="#onClickBtn6" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+    <Button text="7" onAction="#onClickBtn7" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Button text="8" onAction="#onClickBtn8" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+    <Button text="9" onAction="#onClickBtn9" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Button text="0" onAction="#onClickBtn0" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+    <Button text="+" onAction="#onClickBtn+" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+    <Button text="-" onAction="#onClickBtn-" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+    <Button text="*" onAction="#onClickBtn*" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+    <Button text="/" onAction="#onClickBtn/" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+    <Button text="=" onAction="#onClickBtno=" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+
+    <TextArea fx:id="textArea" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="textField" GridPane.rowIndex="0" GridPane.columnIndex="1"
+               prefWidth="50"/>
+
+</GridPane>
+
